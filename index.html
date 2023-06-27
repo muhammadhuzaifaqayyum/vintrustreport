@@ -1,0 +1,576 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>VinTrustReport - VinTrustReport</title>
+
+  <!--Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <!--Custome Style -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <!--OWL Carousel slider-->
+  <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
+  <!--slick-slider -->
+  <link href="assets/css/slick.css" rel="stylesheet">
+  <!--bootstrap-slider -->
+  <link href="assets/css/bootstrap-slider.min.css" rel="stylesheet">
+  <!--FontAwesome Font Style -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom Colors -->
+  <link rel="stylesheet" href="assets/colors/red.css">
+  <!--<link rel="stylesheet" href="assets/colors/orange.css">-->
+  <!--<link rel="stylesheet" href="assets/colors/blue.css">-->
+  <!--<link rel="stylesheet" href="assets/colors/pink.css">-->
+  <!--<link rel="stylesheet" href="assets/colors/green.css">-->
+  <!--<link rel="stylesheet" href="assets/colors/purple.css">-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon-icon/logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon-icon/logo.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/favicon-icon/logo.png">
+  <link rel="shortcut icon" href="assets/images/favicon-icon/logo.png">
+  <!-- Google-Font-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <style>
+    .table-title {
+      width: 10% !important;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .bx-check {
+      color: #6c757d;
+      font-size: 30px;
+    }
+
+    .bx-x {
+      color: #555 !important;
+      font-size: 30px;
+    }
+
+    .small-font {
+      font-size: 13px;
+    }
+
+    table tbody tr:nth-child(4n+1),
+    table tbody tr:nth-child(4n+3) {
+      background: #f6f6f6;
+    }
+
+    tbody,
+    tfoot,
+    thead {
+      border: none;
+      background-color: #fcfcfc;
+    }
+
+    table tbody tr td:nth-child(1) {
+      max-width: 170px;
+      padding-right: 0;
+      width: 170px;
+    }
+
+    table tbody tr td:nth-child(even) {
+      font-weight: 300;
+    }
+
+    table tbody tr {
+      border-bottom: 3px solid #fff;
+    }
+
+    table tbody tr td {
+      flex-grow: 1;
+      color: #555;
+      background: 0 0;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    tbody td {
+      padding: 1rem 1.25rem 1rem;
+    }
+
+    .th {
+      font-size: 18px !important;
+      font-weight: bold;
+    }
+
+    .bigTh {
+      width: 30%;
+      font-weight: bold !important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--Header-->
+  <header>
+    <div class="default-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-2">
+            <div class="logo"> <a href="index.html"><img style="height: 40px;" src="assets/images/logo.png"
+                  alt="image" /></a> </div>
+          </div>
+          <div class="col-sm-9 col-md-10">
+            <div class="header_info">
+              <div class="header_widgets">
+                <div class="circle_icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
+                <p class="uppercase_text">For Support Mail us : </p>
+                <a href="mailto:info@re.com">info@vintrustreport.com</a>
+              </div>
+              <div class="login_btn"> <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal"
+                  data-dismiss="modal">Login / Register</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navigation_bar" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button id="menu_slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse"
+            class="navbar-toggle collapsed" type="button"> <span class="sr-only">Toggle navigation</span> <span
+              class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="header_wrap">
+          <div class="header_search">
+            <div id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
+            <form action="#" method="get" id="header-search-form">
+              <input type="text" placeholder="Search..." class="form-control">
+              <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Sample</a></li>
+            <li><a href="index.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation end -->
+
+  </header>
+  <!-- /Header -->
+
+  <!-- Banners -->
+  <section id="banner" class="banner-section">
+    <div class="container">
+      <div class="div_zindex">
+        <div class="row">
+          <div class="col-md-5 col-md-push-7">
+            <div class="banner_content">
+              <h1>Purchase a Vehicle History Report in just $28.99!</h1>
+              <a href="#" class="btn">Our Packages <span class="angle_arrow"><i class="fa fa-angle-right"
+                    aria-hidden="true"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Banners -->
+
+  <!-- Pricing table start -->
+
+  <section class="section-padding gray-bg">
+
+    <div class="container">
+      <div class="col-lg-12 text-center">
+        <h2>
+          Our Packages
+        </h2>
+        <p>Choose any package!</p>
+      </div>
+      <div class="row" style="margin-top: 130px;">
+
+
+
+        <div class="col-md-4 col-sm-6">
+          <!-- <div class="pricingTable red">
+            <div class="pricingTable-header">
+              <h3 class="title">Basic</h3>
+            </div>
+            <div class="price-value">
+              <span>$35.95</span>
+            </div>
+            <ul class="pricing-content">
+              <li>1 Vehicle Report</li>
+              <li>Vehicle Specification</li>
+              <li>DMV Title History</li>
+              <li>Safety Recall Status</li>
+              <li>Online Listing History</li>
+              <li>Junk & Salvage Information</li>
+              <li>Accident Information</li>
+            </ul>
+            <div class="pricingTable-signup">
+              <a href="#">Check Now!</a>
+            </div>
+          </div> -->
+        </div>
+
+
+        <div class="col-md-4 col-sm-6">
+          <div class="pricingTable red">
+            <div class="pricingTable-header">
+              <h3 class="title">Silver</h3>
+            </div>
+            <div class="price-value">
+              <span>$45.95</span>
+            </div>
+            <ul class="pricing-content">
+              <li>2 Vehicle Report</li>
+              <li>Vehicle Specification</li>
+              <li>DMV Title History</li>
+              <li>Safety Recall Status</li>
+              <li>Online Listing History</li>
+              <li>Junk & Salvage Information</li>
+              <li>Accident Information</li>
+            </ul>
+            <div class="pricingTable-signup">
+              <a href="#">Check Now!</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-6">
+          <!-- <div class="pricingTable black">
+            <div class="pricingTable-header">
+              <h3 class="title">Gold</h3>
+            </div>
+            <div class="price-value">
+              <span>$71.95</span>
+            </div>
+            <ul class="pricing-content">
+              <li>5 Vehicle Report</li>
+              <li>Vehicle Specification</li>
+              <li>DMV Title History</li>
+              <li>Safety Recall Status</li>
+              <li>Online Listing History</li>
+              <li>Junk & Salvage Information</li>
+              <li>Accident Information</li>
+            </ul>
+            <div class="pricingTable-signup">
+              <a href="#">Check Now!</a>
+            </div>
+          </div> -->
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!---Pricing table end -->
+
+
+  <!-- card -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card text-center" style="width:350px">
+            <i class="fa fa-lightbulb-o" aria-hidden="true"
+              style="font-size:80px; padding-bottom:30px; color:#32BEF0;"></i>
+            <div class="card-body">
+              <h4 class="card-title">Choose your Package</h4>
+              <p class="card-text">Choose your package, fill up the form and submit to have a preview of your Vehicle
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card text-center" style="width:350px">
+            <i class="fa fa-check-square-o" aria-hidden="true"
+              style="font-size:80px; padding-bottom:30px; color:#32BEF0;"></i>
+            <div class="card-body">
+              <h4 class="card-title">Verify your Vehicle</h4>
+              <p class="card-text">
+              <p>You are provided by a preview of your report, verify your vehicle</p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card text-center" style="width:350px">
+
+            <i class="fa fa-money" aria-hidden="true" style="font-size:80px; padding-bottom:30px; color:#32BEF0;"></i>
+            <div class="card-body">
+              <h4 class="card-title">Purchase your Report</h4>
+              <p class="card-text">Provide your contact details and complete payment process. On successful payment you
+                will be redirected to view your report.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /card -->
+
+  <!-- About -->
+  <section class="about-us-section section-padding gray-bg">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Why<span>Us!</span></h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour, or randomised words which don't look even slightly believable. If you are going
+          to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
+          text.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <ul>
+            <li>Verify vehicle specifications and maintenance history.</li>
+            <li>Check the number of vehicle owners and the duration of ownership.</li>
+            <li>Loan and Lien verification to ensure there is no debt on the vehicle.</li>
+            <li>Accident and Repair record for to ensure vehicle reliability.</li>
+            <li>Verify company recalls and service history to assess safety and security.</li>
+            <li>Check the number of insurance claims and the severity of damages incurred.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <ul>
+            <li>Past odometer readings if the odometer ever been rolled back?</li>
+            <li>Theft vehicle check if the car been registered as a stolen vehicle?</li>
+            <li>Hidden Damages if car have any undisclosed or hidden damages?</li>
+            <li>Technical data - what are the vehicles specifications and technical Data?</li>
+            <li>How was the car previously used? Was it a prior taxi or rental car?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /About -->
+
+  <!-- table-->
+
+  <div class="row">
+
+    <div class="col-md-12" style="padding-top:30px">
+      <table id="whyUsTbl">
+        <tbody>
+          <tr>
+            <td class="dark-1 th" style="width:50%;">Report Contents</td>
+            <td class="right th dark-1 center bigTh">CarReportLab</td>
+            <td class="right th dark-1 table-title center">CarFax</td>
+            <td class="right th dark-1 table-title center bigTh">AutoCheck</td>
+            <td class="right th dark-1 table-title center bigTh">InstaVIN</td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bold dark-1">Free Photo</span></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bold dark-1">Odometer Reading</span></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bold dark-1">Accident Check</span></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bold dark-1">Title Check</span></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bol dark-1">Fraud &amp; Crime Information</span></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bold dark-1">Market Price Analysis</span></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#x2713;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bold dark-1">Instant Report:</span> Get your report instantly! No
+              waiting around</td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="medium-bold dark-1">Accurate Data:</span> Using government and third
+              party databases</td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+          <tr>
+            <td class="small-font"><span class="dark-1" style="font-weight: bold;">Savings:</span> The competitors
+              charge <span style="font-weight: bold;">$39.99</span> for a single report!</td>
+            <td class="center">&#x2713;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+            <td class="center">&#10060;</i></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+  <section class="section-padding bgcolor">
+    <div class="container">
+      <div class="row col-lg-12  ">
+        <div class="col-lg-9 ">
+          <h5 style="color:white; ">LOOKING FOR VEHICLE HISTORY REPORT? </h5>
+          <p style="color:white;">You are at the right place. We offer you the best deals in the market.<br>Moreover you
+            will be provided by a preview of your report before you make any payment. Happy Report!</p>
+        </div>
+        <div class="col-lg-3">
+          <button class="btn btn-dark">Check Our Packages!</button>
+        </div>
+      </div>
+  </section>
+
+
+  <div>
+    <img src="assets/images/banner.jpg" alt="image" style="width: 100%;">
+  </div>
+
+
+  <section class="section-padding bgcolor2">
+    <div class="container">
+      <div class="raw">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 col-sm-12 text-center text-white">
+          <h2 style="color:rgb(255, 255, 255);">Disclaimer</h2>
+          <p style="color:rgb(255, 255, 255);">Dear loyal Customers,Taking into account about recent scams, this is to
+            notify that
+            there is an increased
+            traffic of false sms marketing To our website that has strongly no connection to us. We are authorized
+            licensed resellers for Clearvin ( official NMVTIS data provider) and uses only SEO & Social Media Marketing
+            to bring traffic to our website by providing correct and detailed reports.</p>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section-padding">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-12 col-sm-6">
+          <h2>Partners</h2>
+          <p>Authorized NMVTIS PROVIDER</p>
+          <img src="assets/images/cv-logo.svg" alt="" height="70px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="white-text">About VinTrustReport</h3>
+            <p class="white-text">We provide you with a history report of your vehicle, we are a sales partner of NMVTIS
+              Data Provider.</p>
+              <img src="assets/images/logo.png" alt="" style="width: 50rem;">
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <h3 class="white-text">Other Pages</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <h3 class="white-text">Contact Info</h3>
+            <ul class="contact-box" style="list-style: none;">
+              <li class="text-white">
+                <i class="fa fa-envelope-open"></i>
+                <a href="mailto:info@vintrustreport.com" class="text-white">info@vintrustreport.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <p class="copy-right">VinTrustReport © 2021. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer-->
+
+  <!--Back to top-->
+  <div id="back-top" class="back-top"> <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i> </a> </div>
+  <!--/Back to top-->
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/interface.js"></script>
+  <!--bootstrap-slider-JS-->
+  <script src="assets/js/bootstrap-slider.min.js"></script>
+  <!--Slider-JS-->
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+
+</body>
+
+</html>
