@@ -5644,6 +5644,7 @@ tr{
 }
 @media only screen and (max-width:560px) {
   .logo{
-    width: 7rem;
+    width: 10px;
+    height: 20px;
   }
 }
